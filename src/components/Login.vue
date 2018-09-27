@@ -14,17 +14,20 @@
           </el-col>
         </el-form-item>
         <el-form-item>
-          <el-col :span="12">
-            <el-button type="text">注    册</el-button>
-          </el-col>
-          <el-col :span="12">
-            <el-button type="text">忘记密码</el-button>
-          </el-col>
-        </el-form-item>
-        <el-form-item>
-          <el-button type="primary" @click="login" @keyup.native.13="login">登录</el-button>
+          <el-button type="primary" @click="login" @keyup.native.13="login">登 录</el-button>
         </el-form-item>
       </el-form>
+      <div class="title">
+        <span>三方登录</span>
+      </div>
+      <div id="icon">
+        <el-col :span="6" :offset="8">
+          <i class="iconfont icon-QQ"></i>
+        </el-col>
+        <el-col :span="6">
+          <i class="iconfont icon-weixin"></i>
+        </el-col>
+      </div>
     </div>
   </div>
 </template>
@@ -72,6 +75,7 @@
 </script>
 
 <style scoped>
+  @import url('../assets/css/iconfont.css');
   .container{
     min-height: 758px;
     height: 100%;
@@ -87,7 +91,7 @@
     background-color: #ffffff;
   }
   .el-form-item{
-    margin: 15px auto;
+    margin: 20px auto;
     width: 80%;
   }
   .el-button--primary{
@@ -96,6 +100,23 @@
     border-radius: 20px;
   }
   .el-form{
-    padding-top: 50px;
+    padding-top: 40px;
+  }
+  .title{
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    font-size: .5em;
+    color: #ccc;
+  }
+  div#icon{
+    margin-top: 15px;
+  }
+  .iconfont{
+    border-radius: 50%;
+  }
+  .iconfont:hover{
+    box-shadow: 0px 0px 20px #ccc;
+    color: #F2F05C;
+    transition: all .3s;
   }
 </style>
