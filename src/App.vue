@@ -13,13 +13,14 @@ export default {
 
 <style>
 #app{
-  border: thin solid black;
+  min-height: 758px;
   height: 100%;
 }
 html,body{
   margin: 0;
   border: 0;
   outline: none;
+  /*height: 100%;*/
 }
 *{
   box-sizing: border-box;
