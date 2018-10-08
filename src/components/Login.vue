@@ -68,7 +68,11 @@
     },
     methods: {
       login() {
-        alert(123);
+        this.axios.get('/test').then(function(response) {
+          console.log(response);
+        }).catch(function(error) {
+          console.log(error);
+        });
       }
     }
   }
