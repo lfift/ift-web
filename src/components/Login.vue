@@ -18,7 +18,7 @@
         </el-form-item>
       </el-form>
       <div class="title">
-        <span>三方登录</span>
+        <span>其他登录方式</span>
       </div>
       <div id="icon">
         <el-col :span="6" :offset="8">
