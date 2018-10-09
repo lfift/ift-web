@@ -7,7 +7,7 @@ import axios from 'axios'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
-axios.defaults.baseURL = "http://127.0.0.1";
+axios.defaults.baseURL = "http://127.0.0.1:88";
 Vue.prototype.axios = axios;
 new Vue({
   el: '#app',

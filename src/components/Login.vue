@@ -68,7 +68,7 @@
     },
     methods: {
       login() {
-        this.axios.get('/test').then(function(response) {
+        this.axios.get('/user').then(function(response) {
           console.log(response);
         }).catch(function(error) {
           console.log(error);
